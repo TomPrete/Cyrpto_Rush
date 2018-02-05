@@ -1,14 +1,231 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width initial-scale=1.0'>
-    <title>Boilermaker</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script defer src="/bundle.js"></script>
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
-</html>
 
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width initial-scale=1.0'>
+  <title>CryptoRush</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script defer src="/bundle.js"></script>
+  <style>
+    /* THEME COLORS
+        FFFFF9  off-white for background
+        FFCE5E  Stil de Grain yellow as a highlight color
+        1F0C03 smoky black for nav and fonts
+        FFE8AA NAVAJO WHITE
+
+
+
+       */
+
+    body {
+      font-size: 16px;
+      padding: 0px;
+      background-color: #e4e4e4;
+      color: rgb(255, 255, 255);
+
+    }
+
+    .josefin-font {
+      font-family: 'Josefin Sans', sans-serif;
+      !important
+    }
+
+    div.content-container {
+      padding: 0 2rem 2rem;
+    }
+
+    .active {
+      color: #FFCE5E;
+    }
+
+    .title {
+      background-color: rgb(66, 196, 141);
+      text-align: center;
+      padding-top: 1%;
+      margin-bottom: 0;
+      border-color: #4CE1A2;
+    }
+
+    h2.ui.icon.header {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    h4.ui.sub.header {
+      text-align: right;
+      padding: 2em 0;
+    }
+
+    div.ui.icon.input {
+      width: 50%;
+      display: block;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    input.prompt {
+      width: 100%;
+    }
+
+    .ui.icon.header {
+      width: 100%;
+      text-align: center;
+    }
+
+    nav.ui.text.menu {
+      background-color: #1F0C03;
+      margin: 0px;
+    }
+
+    #title {
+      font-size: 4rem;
+    }
+
+    nav a,
+    nav h1 {
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+    }
+
+    nav a {
+      color: rgb(17, 115, 172);
+    }
+
+    nav a:hover {
+      color: rgb(214, 121, 45);
+    }
+
+    a {
+      color: rgb(100, 98, 96);
+    }
+
+    a:hover {
+      color: rgb(214, 121, 45);
+    }
+
+    a:hover h2.ui.sub.header {
+      color: rgb(214, 121, 45);
+    }
+
+    .category-sidebar {
+      padding-top: 2rem;
+    }
+
+    .category-sidebar h5 {
+      font-size: 1.5rem;
+    }
+
+    .categories-container {
+      padding-top: 2rem;
+    }
+
+    div.ui.vertical.animated.button {
+      display: block;
+      margin: auto;
+      width: 4rem;
+
+    }
+
+
+    .ui.dropdown.dropdown-orders {
+      width: 400px;
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+
+    .shop-link {
+      text-align: center;
+      color: #fffff9;
+      font-size: 3rem;
+      font-weight: 300;
+      text-shadow: 5px 1px 8px #1F0C03;
+
+
+    }
+
+    .ui.text.menu .item.word-form {
+      color: #FFE8AA;
+      font-weight: 300;
+      padding-right: 2rem;
+      padding-left: 0;
+    }
+
+    .circle-logo {
+      display: block;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .header-icon {
+      height: 44.3px;
+      margin: 0.8rem;
+      padding: 0;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 100%;
+      text-align: center
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+
+    #grid {
+      padding-left: 10%;
+      margin: auto
+    }
+
+    #coinbase {
+      width: 100%;
+      background-color: rgb(28,104,173)
+    }
+
+    #kraken {
+      width: 100%;
+
+      margin: 7% 0%
+    }
+    #krakencard {
+      background-color: rgb(99, 136, 170);
+    }
+
+    .base {
+      font-weight: bold;
+      font-size: 1.5rem
+    }
+
+    #trade-button {
+      width: 79%;
+      margin-top: 1rem;
+      margin-left: 10%
+    }
+
+    .dollar-display {
+      text-align: center;
+      margin: 2% 0%;
+      color: red;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+  </div>
+</body>
+
+</html>
